@@ -144,7 +144,7 @@ if __name__ == "__main__":
     graph = VGG_16_graph()
 
     print 'creating sequential model...'
-    model = VGG_16('..\\Resources\\vgg16_weights.h5')
+    model = VGG_16('../Resources/vgg16_weights.h5')
 
     print 'setting graph weights...'
     graph.set_weights(model.get_weights())
